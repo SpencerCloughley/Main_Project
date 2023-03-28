@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Contact Info">
+    <title>Contact Us!</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/custom-js.js"></script>
+
+    <!-- Similar to the font found in the Honeydukes logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+
+</head>
+<body>
+<header id="header"></header>
+    <main>
+        <section class="contact">
+            <div>
+                <h2>Send us an email!</h2>
+            </div>
+            <div>
+                <!--Contact Form-->
+                <form method="post" action="somefile.php">
+                    <p><input type="text" name="fname" placeholder="Name"></p>
+                    <p><input type="email" name="email" placeholder="Email"></p>
+                    <p><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="705-123-4567"></p>
+                    <p><textarea placeholder="Please leave a message!"></textarea></p>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+
+        </section>
+        <section class="contact">
+            <!--Direct Contact Info-->
+            <div>
+                <p>For any other comments, questions or concerns please reach out to us:</p>
+                <p>Owl: High Street Hogsmeade England</p>
+                <p>Email: Honeydukes@honeydukes.com</p>
+            </div>
+            <!--Social Media sites-->
+            <div>
+                <div>
+                    <a href="https://www.facebook.com/harrypottermovie/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/harrypotterfilm/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/user/harrypotter"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer id="footer"></footer>
+</body>
+</html>

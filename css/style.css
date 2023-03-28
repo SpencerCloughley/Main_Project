@@ -1,0 +1,248 @@
+html{scroll-behavior: smooth;}
+body{margin: 0px;}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0px;
+}
+/* Chocolate Frog Colours*/
+/* Purple - #6c4a9a */
+/* Lighter Purple - #9376b9 */
+
+/* Honeyduke colours*/
+/* Pink - #eca8b1 Complementary - #a8ece3
+   Green - #499443
+
+
+ */
+p,a,li,figcaption{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 24px;
+}
+
+header{
+    background-color: #a8ece3;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+header div{
+    width: auto;
+    height: 115px;
+    flex-grow: 1;
+}
+header div img{
+    width: auto;
+    height: 100%;
+}
+header nav menu{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+}
+header nav menu li{
+    padding: 0px 20px;
+}
+header a{
+    color: #eca8b1;
+    text-decoration: none;
+}
+
+.masthead{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/background.webp");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+.masthead div h1{
+    color: #eca8b1;
+    font-size: 100px;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.6);
+    letter-spacing: 0.05em;
+    font-family: 'Fjalla One', sans-serif;
+}
+.product{
+    padding: 1%;
+    height: auto;
+    background: #eca8b1;
+    color: #6c4a9a;
+}
+.product div{
+    display: flex;
+    padding: 5px;
+}
+.product section{
+    padding: 10px;
+}
+.product div p{
+    width: 50%;
+}
+.product div img{
+    width: 20%;
+    height: auto;
+    padding: 5px;
+}
+.product div section a{
+    line-height: 45px;
+    display: flex;
+    width: 100px;
+    text-decoration: none;
+    border: 2px solid #6c4a9a;
+    border-radius: 15px;
+    background: #9376b9;
+}
+.product div section a:hover{
+    color: #f4f4f4;
+    background: #6c4a9a;
+}
+.history{
+    display: flex;
+    background: #eca8b1;
+}
+.history div{
+    padding: 1%;
+    width: 50%;
+}
+.history div figure{
+    margin: 0px;
+    width: 40%;
+    padding: 5px;
+    border: 1px solid #0e0e0e;
+    background: #D3D3D3;
+}
+.product-list{
+    display: flex;
+    background: #eca8b1;
+    padding: 1%;
+}
+.product-list div:nth-child(1){
+    width: 30%;
+}
+.product-list div:nth-child(2){
+    width: 50%;
+}
+.product-list div figure{
+    margin: 0px;
+    width: 30%;
+    padding: 5px;
+    border: 1px solid #0e0e0e;
+    background: #D3D3D3;
+}
+.product-list div figure img {
+    width: auto;
+    height: 200px;
+}
+.product-list table, th, td {
+    font-size: 25px;
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 3px;
+}
+.frog{
+    display: flex;
+    background: #eca8b1;
+    color: #a8ece3;
+}
+.frog div{
+    width: 40%;
+    display: flex;
+    padding: 1%;
+}
+.frog div:first-child{
+    display: flex;
+    justify-content: right;
+}
+
+.contact{
+    background: #eca8b1;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3%;
+    color: #499443;
+}
+.contact div a i{
+    font-size: 42px;
+}
+.contact div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer{
+    background-color: #a8ece3;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    padding: 15px;
+}
+footer div{
+    width: auto;
+    height: 200px;
+    flex-grow: 1;
+}
+footer div p,footer div h3,footer div a{
+    color: #eca8b1;
+    text-decoration: none;
+}
+footer div:first-child{
+    display: flex;
+    align-items: center;
+}
+footer div:nth-child(2){
+    padding: 0px 10px;
+}
+footer div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer div a{
+    width: auto;
+    height: 125px;
+}
+footer div img{
+    width: auto;
+    height: 100%;
+}
+@media screen and (max-width: 1024px) {
+    footer{
+        height: 400px;
+    }
+    .product div{
+        width: 150%;
+    }
+    .history div figure{
+        width: 75%;
+    }
+    .product-list div figure{
+        width: 50%;
+    }
+}
+@media screen and (max-width:768px){
+    footer{
+        height: 500px;
+    }
+
+    .history div figure{
+        width: 95%;
+    }
+    .product-list div figure{
+        width: 70%;
+    }
+}
